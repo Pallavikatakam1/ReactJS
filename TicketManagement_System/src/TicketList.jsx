@@ -14,7 +14,7 @@ const TicketList = ({ onEdit }) => {
         if (loggedInUser) {
             setUser(loggedInUser);
         } else {
-            navigate('/login');
+            navigate('/Login');
         }
 
         axios.get('http://localhost:8080/Ticket')
@@ -38,7 +38,7 @@ const TicketList = ({ onEdit }) => {
     };
 
     const handleUsers = () => {
-        navigate('/userTable');
+        navigate('/UserTable');
     };
 
     const handleDelete = (ticketId) => {

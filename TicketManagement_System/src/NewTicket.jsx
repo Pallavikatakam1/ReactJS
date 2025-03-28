@@ -79,7 +79,7 @@ const NewTicket = ({ selectedTicket, setSelectedTicket }) => {
       );
       alert("Ticket updated successfully");
       setSelectedTicket(null);
-      navigate("/ticketTable");
+      navigate("/TicketList");
     } catch (error) {
       alert("Ticket update failed");
       console.error("Error: ", error);
@@ -104,7 +104,7 @@ const NewTicket = ({ selectedTicket, setSelectedTicket }) => {
         ticketDetails
       );
       alert("Ticket added successfully");
-      navigate("/ticketTable");
+      navigate("/TicketList");
     } catch (error) {
       alert("Ticket adding failed");
       console.error("Error: ", error);

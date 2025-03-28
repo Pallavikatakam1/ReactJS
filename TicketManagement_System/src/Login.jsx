@@ -20,7 +20,7 @@ const Login = () => {
             // If user exists, store it in localStorage and navigate
             if (user) {
                 localStorage.setItem('user', JSON.stringify(user));
-                navigate('/ticketTable');
+                navigate('/TicketList');
             } else {
                 setError('Invalid credentials');
             }

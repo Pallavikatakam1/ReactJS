@@ -13,7 +13,7 @@ const Signup = () => {
     
     try {
       // Change the URL to your backend API endpoint for signup
-      const response = await axios.post('http://localhost:8080/api/auth/signup', { email, password });
+      const response = await axios.post('http://localhost:8080/api/auth/Signup', { email, password });
       
       // If signup is successful, navigate to login page
       if (response.status === 201) {
