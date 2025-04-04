@@ -2,10 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import TicketService from './services/ticketServices';
 
+
 const TicketForm = () => {
   const { id } = useParams();
-  const navigate = useNavigate();
   const [ticket, setTicket] = useState({ title: '', description: '' });
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (id) {
@@ -25,7 +26,7 @@ const TicketForm = () => {
   };
 
   return (
-    <div>
+    <div className='container'>
       <h2>{id ? 'Edit Ticket' : 'Add Ticket'}</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
@@ -34,6 +35,7 @@ const TicketForm = () => {
             type="text"
             value={ticket.title}
             onChange={(e) => setTicket({ ...ticket, title: e.target.value })}
+            required
           />
         </div>
         <div className="form-group">
@@ -41,8 +43,9 @@ const TicketForm = () => {
           <textarea
             value={ticket.description}
             onChange={(e) => setTicket({ ...ticket, description: e.target.value })}
-          ></textarea>
+          />
         </div>
+        <button type="submit">Add Ticket</button>
         <button type="submit">Save</button>
       </form>
     </div>

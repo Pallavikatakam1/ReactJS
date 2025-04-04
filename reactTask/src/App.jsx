@@ -27,7 +27,7 @@ function App() {
     , []);
 
 
-  // function fun1(e) {
+  // function fun1(e) { 
   //   navigate("/new");
   //   e.target.blur();
   // }

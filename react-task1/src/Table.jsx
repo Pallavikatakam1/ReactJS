@@ -13,11 +13,6 @@ const Table = ({data, setData , setEditEntry}) => {
         setFilteredData(data);
     },[data]);
 
-    const clearData = () => {
-        localStorage.clear();
-        setData([]);
-    }
-
     const DataEntry = () => {
         setEditEntry(null);
         localStorage.removeItem('editEntry');
@@ -42,7 +37,6 @@ const Table = ({data, setData , setEditEntry}) => {
             <Search data={data} setFilteredData={setFilteredData} />
             <Filter data={data} setFilteredData={setFilteredData}/>
             <Sorting data={data} setFilteredData={setFilteredData} />
-            <button onClick={clearData}>Clear Data</button>
             <button id="total">Total Amount Spent: {TotalAmount}</button>
             <button id="addNew" onClick={DataEntry}>New Expenses</button>
               

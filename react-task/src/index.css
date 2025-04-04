@@ -1,0 +1,87 @@
+/* index.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f6c1c1;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app-container {
+  width: 90%;
+  max-width: 800px;
+  background-color: #e3d5d5;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+button {
+  background-color: #4CAF50;
+  color: rgb(249, 178, 178);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 4px;
+  border: 1px solid #000000;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+
+}
+
+table th, table td {
+  padding: 10px;
+  text-align: left;
+}
+
+table th {
+  background-color: #e39d9d;
+}
+
+form-container, expense-summary {
+  margin: 20px ;
+}
+
+/* Add this for the navigation buttons */
+.navigation {
+  margin: 20px 0;
+}
+
+.navigation button {
+  margin: 5px;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.navigation button:hover {
+  background-color: #45a049;
+}

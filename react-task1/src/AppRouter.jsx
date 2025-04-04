@@ -1,4 +1,4 @@
-// src/AppRouter.js
+// 
 import DataEntry from "./DataEntry";
 import Table from "./Table";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -20,7 +20,7 @@ const AppRouter = () => {
     setData(entries);
   };
 
-  return (
+  return (   
     <Router> 
       <Header /> {/* Add Header here */}
       <Routes>

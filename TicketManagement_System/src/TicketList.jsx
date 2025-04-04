@@ -12,8 +12,9 @@ const TicketList = () => {
   }, []);
 
   return (
-    <div>
+    <div className='container'>
       <h2>Tickets</h2>
+      <Link to = "/tickets/add"><button>Add Ticket</button></Link>
       <table>
         <thead>
           <tr>
