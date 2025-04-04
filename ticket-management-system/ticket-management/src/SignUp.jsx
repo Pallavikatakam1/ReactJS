@@ -19,6 +19,7 @@ const SignUp = () => {
     role: null,
   });
 
+  
   // Handle generic form field changes
   const handleChange = (event) => {
     setFormData({

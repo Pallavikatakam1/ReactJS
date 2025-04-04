@@ -9,6 +9,7 @@ const UserTable = () => {
   const [data, setData] = useState([]);
   const navigate = useNavigate();
 
+  
   useEffect(() => {
     axios
       .get("http://localhost:8080/users")

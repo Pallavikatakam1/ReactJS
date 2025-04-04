@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import './App.css'
 
+
 const Home = () => {
   const navigate = useNavigate();
 
