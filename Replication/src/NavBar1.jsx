@@ -11,7 +11,7 @@ import { Form } from "react-bootstrap";
  import guest from "./assets/guest.svg";
  import more from "./assets/more.svg";
 import "./App.css";
-// import "./index.css";
+
 
 
 function NavBar1(){
