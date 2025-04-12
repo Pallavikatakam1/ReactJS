@@ -108,6 +108,6 @@ const Category = () => {
             </Row>
         </Container>
     );
-};
+};  
 
 export default Category;
