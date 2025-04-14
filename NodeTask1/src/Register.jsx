@@ -3,7 +3,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-
+import Login from "./Login";
 const Register = () => {
   const navigate = useNavigate();
 
@@ -24,20 +24,25 @@ const Register = () => {
   // Handle form submission
   const handleSubmit = async (event) => {
     event.preventDefault();
-
+  
     try {
       const response = await axios.post(
         "http://localhost:3000/users/register",
         formData
       );
-      console.log(response.data);
-      alert("Successfully Registered");
-      navigate("/users/login");
+      if (response.status === 200) {
+        alert("Successfully Registered");
+        // Use setTimeout to delay the navigation for a smooth transition
+        setTimeout(() => {
+          navigate("/login");
+        }, 500); // You can adjust the delay time if needed
+      }
     } catch (error) {
       console.error("Error: ", error);
       alert("Registration Failed");
     }
   };
+  
 
   return (
     <div id="container">
