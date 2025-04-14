@@ -16,7 +16,7 @@ const Login = () => {
         e.preventDefault();
         
         try {
-          const response = await axios.post('http://localhost:3000/login', { username, password });
+          const response = await axios.post('http://localhost:3000/users/login', { username, password });
           if (response.status === 200) {
             localStorage.setItem("user", JSON.stringify(response.data));
             navigate("/dashboard");

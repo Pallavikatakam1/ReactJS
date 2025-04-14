@@ -1,0 +1,129 @@
+/* Center the entire form on the page */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url('./assets/bg.png'); /* path to your background image */
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+}
+
+/* Main container for the form and submitted data */
+.formContainer {
+  max-width: 500px;
+  width: 100%;
+  padding: 20px;
+  background-color: #ffffb7;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Each form field */
+.formGroup {
+  margin-bottom: 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+/* Labels */
+.label {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+/* Inputs */
+.input {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: rgb(249, 238, 249);
+}
+.input:hover{
+  background-color: rgb(255, 221, 251);
+}
+
+/* Error messages */
+.error {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 4px;
+}
+
+/* Submit button */
+.button {
+  padding: 10px 16px;
+  background-color: #85f889;
+  color: rgb(0, 0, 0);
+  border: none;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Button hover effect */
+.button:hover {
+  background-color: #0b4f0f;
+}
+
+/* For SubmitPage specific styling */
+
+.submitContainer {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #f9eded;
+  box-shadow: 0 0 10px rgba(0, 0, 255, 0.1);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+}
+
+.submitTitle {
+  color: #ff006a; /* blue color for h5 */
+  margin-bottom: 20px;
+  font-size: large;
+}
+
+.submitBox {
+  background-color: #dadcdd;
+  padding: 15px 20px;
+  border: 1px solid #d6e9f9;
+  border-radius: 6px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.submitBox p {
+  margin: 10px 0;
+}
+
+.blueButton {
+  padding: 10px 16px;
+  background-color: #62acfc;
+  color: white;
+  border: none;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.blueButton:hover {
+  background-color: #0056b3;
+}
+

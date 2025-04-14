@@ -27,12 +27,12 @@ const Register = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:3000/Register",
+        "http://localhost:3000/users/register",
         formData
       );
       console.log(response.data);
       alert("Successfully Registered");
-      navigate("/login");
+      navigate("/users/login");
     } catch (error) {
       console.error("Error: ", error);
       alert("Registration Failed");
