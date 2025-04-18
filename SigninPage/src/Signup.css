@@ -1,0 +1,112 @@
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background-color: rgb(178, 252, 227);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 160%;
+}
+.form-container {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    max-height: auto;
+    box-sizing: border-box;
+    background-color: aliceblue;
+    opacity: 0.9;
+}
+.full-form{
+  position: relative;
+  top: -40px;
+}
+.form-container .form-label {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.form-container .form-control {
+    border-radius: 4px;
+    margin-bottom: 6px;
+}
+.form-container .btn {
+    margin-top: 8px;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+.quest-logo{
+    width: 250px;
+    height: 50px;
+}
+.logo-class{
+    justify-self: center;
+    margin-bottom: 25px;
+    position: relative;
+    top: -20px;
+}
+.side-headings{
+  color: black;
+  font-size: medium;
+  font-weight:600;
+  width: 200px;
+}
+.side-heading-row{
+  display: flex;
+  flex-direction: row;
+}
+.datepicker{
+  margin-bottom: 5px;
+  position: relative;
+  right: 66px;
+}
+.input-fields{
+  height: 30px;
+}
+
+.day-class{
+    height: 35px;
+    width: 80px !important;
+    font-size: 16px;
+  }
+.month-class{
+    height: 35px;
+    width: 105px !important;
+    font-size: 16px;
+}
+.year-class{
+    height: 35px;
+    width: 88px !important;
+    font-size: 16px;
+}
+.date-row{
+    margin-bottom: 5px;
+    position: relative;
+    right: 55px;
+}
+.gender-class{
+    height: 35px;
+    width: 570px !important;
+    font-size: 16px;
+}
+.security-class{
+    height: 33px;
+    width: 570px !important;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.state-class{
+    height: 33px;
+    width: 570px !important;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+  
