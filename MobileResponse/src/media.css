@@ -1,0 +1,149 @@
+@media (max-width: 1024px) {
+    body {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      min-width: 410px;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+  
+    .allDivs {
+      flex-direction: column;
+      left: 0;
+    }
+  
+    .container-1,
+    .container-2,
+    .container-3,
+    .container-4,
+    .container-5,
+    .container-6,
+    .container-7,
+    .container-8,
+    .container-9,
+    .container-10,
+    .container-11 {
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+    }
+  
+    /* Individual container heights */
+    .container-1 { height: 200px; }
+    .container-2 { height: 300px; }
+    .container-3 { height: 150px; }
+    .container-5, .container-6 { height: 230px; }
+    .container-5 { margin-bottom: 20px; }
+    .container-7 { height: 700px; }
+    .container-8 { height: 165px; }
+    .container-10, .container-11 {
+      height: 240px;
+    }
+    .container-10 { margin-bottom: 20px; }
+  
+    /* Flex adjustments */
+    .container-5-6,
+    .first-row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    /* Text alignment for smaller screens */
+    .dashboard,
+    .profile-size,
+    .total,
+    .total-revenue {
+      text-align: center;
+    }
+  
+    .profiles {
+      margin-top: 10px;
+      justify-content: center;
+      position: relative;
+      left: 0;
+    }
+  
+    /* Let's Start button */
+    .letsStart-div {
+      width: 120px;
+      height: 45px;
+      margin: 20px auto 0 auto;
+      position: relative;
+      left: 0;
+    }
+    .letsStart {
+      position: relative;
+      left: 10px;
+      top: 10px;
+    }
+  
+    /* Revenue section */
+    .dollar {
+      position: relative;
+      left: 20px;
+      top: 35px;
+    }
+  
+    .total,
+    .total-revenue {
+      position: relative;
+      left: 15px;
+    }
+  
+    .progress {
+      position: relative;
+      left: 120px;
+    }
+  
+    /* Tour-trip layout */
+    .tour-trip {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      left: 10px;
+    }
+  
+    .transport {
+      position: relative;
+      left: 30px;
+    }
+  
+    /* Calendar Slots */
+    .first, .second, .third, .fourth, .fifth, .sixth {
+      margin: 5px 0;
+      position: relative;
+      left: 0;
+    }
+  
+    /* Right column adjustments */
+    .paint-logo {
+      position: relative;
+      right: 10px;
+    }
+  
+    .client-details {
+      position: relative;
+      right: 45px;
+    }
+  
+    .profile-logo {
+      position: relative;
+      left: 250px;
+      top: 10px;
+    }
+  
+    .profile-logos {
+      position: relative;
+      right: 30px;
+      top: 5px;
+    }
+  
+    .send-button {
+      position: relative;
+      left: 240px;
+      bottom: 20px;
+    }
+  }
+  

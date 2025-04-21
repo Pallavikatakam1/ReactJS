@@ -268,7 +268,7 @@ const Signup = () => {
             <>
             <Form.Text className="text-danger">{confirmEmailMessage}</Form.Text> <br />
             </>
-          )}
+          )} 
 
           <div className="side-heading-row">          
           <Form.Text className="side-headings">Password</Form.Text>
@@ -318,7 +318,7 @@ const Signup = () => {
           <Form.Text className="side-headings">Security Answer :</Form.Text>
           <Form.Control
             className="input-fields"
-            type="text"
+            type="text" 
             placeholder="Security Answer"
             onChange={(e) => setSecurity(e.target.value)}
             required
@@ -354,7 +354,7 @@ const Signup = () => {
           />
           </div>
           {cityMessage && (
-            <>
+            <> 
             <Form.Text className="text-danger">{cityMessage}</Form.Text> <br />
             </>
           )}
